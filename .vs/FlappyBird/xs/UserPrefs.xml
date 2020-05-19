@@ -1,25 +1,30 @@
 ﻿<Properties StartupConfiguration="{E3EF6E53-88BE-20EB-65C7-C65330B49779}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scrip/BgrMove.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/WallMove.cs">
     <Files>
-      <File FileName="Assets/Scrip/BgrMove.cs" Line="30" Column="1" />
+      <File FileName="Assets/Script/WallMove.cs" Line="30" Column="53" />
+      <File FileName="Assets/Script/BgrMove.cs" Line="24" Column="1" />
+      <File FileName="Assets/Script/GameController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FlappyBird" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scrip" expanded="True">
-                <Node name="BgrMove.cs" selected="True" />
+              <Node name="Script" expanded="True">
+                <Node name="WallMove.cs" selected="True" />
               </Node>
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="adabccdc-a2d0-4985-8383-5698ba95179d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="36ba739b-3903-49ef-9f5b-c125bf81a0aa" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
