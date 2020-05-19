@@ -16,7 +16,7 @@ public class WallMove : MonoBehaviour
     {
         obj = gameObject;
         speedMove = 5;
-        oldPosition = 5;
+        oldPosition = 3;
         minY = -1;
         maxY = 1;
     }
