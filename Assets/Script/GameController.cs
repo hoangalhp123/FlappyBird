@@ -74,9 +74,15 @@ public class GameController : MonoBehaviour
         skype.GetComponent<BgrMove>().StopBgr();
         grass.GetComponent<BgrMove>().StopBgr();
 
+        // save score
+        if (point > PlayerPrefs.GetInt("HighScore")) {
+            PlayerPrefs.SetInt("HighScore", point);
+            PlayerPrefs.Save();
+        }
+
         panelEndGame.SetActive(true);
         endPoint.text = "Your score:" + point.ToString();
-        highPoint.text = "High score: 1000";
+        highPoint.text = "High score: " + PlayerPrefs.GetInt("HighScore").ToString();
         btnRestart.onClick.AddListener(delegate
         {
             SceneManager.LoadScene(0);

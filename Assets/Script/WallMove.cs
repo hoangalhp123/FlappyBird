@@ -39,7 +39,6 @@ public class WallMove : MonoBehaviour
 
     public void StopWall()
     {
-        Debug.Log("Stop");
         speedMove = 0;
     }
 
