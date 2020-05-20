@@ -10,21 +10,37 @@ public class WallMove : MonoBehaviour
     public float minY;
     public float maxY;
     public float oldPosition;
+    private bool isStartGame = false;
 
     // Start is called before the first frame update
     void Start()
     {
         obj = gameObject;
         speedMove = 5;
-        oldPosition = 3;
+        oldPosition = 4;
         minY = -1;
         maxY = 1;
+        obj.transform.position = new Vector3(obj.transform.position.x, Random.Range(minY, maxY + 1), 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        obj.transform.Translate(new Vector3(-1 * Time.deltaTime * speedMove, 0, 0));
+        if (Input.GetMouseButtonDown(0))
+        {
+            isStartGame = true;
+        }
+        if (isStartGame)
+        {
+            obj.transform.Translate(new Vector3(-1 * Time.deltaTime * speedMove, 0, 0));
+        }
+        
+    }
+
+    public void StopWall()
+    {
+        Debug.Log("Stop");
+        speedMove = 0;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -33,7 +49,7 @@ public class WallMove : MonoBehaviour
         {
             obj.transform.position = new Vector3(oldPosition, Random.Range(minY, maxY + 1), 0);
         }
-        
+
     }
 
 }

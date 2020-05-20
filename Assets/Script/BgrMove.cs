@@ -8,6 +8,7 @@ public class BgrMove : MonoBehaviour
     public float speedMove;
     public float moveRange;
     private Vector3 oldVector;
+    private bool isStopBgr = false;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +22,18 @@ public class BgrMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        obj.transform.Translate(new Vector3(-1 * Time.deltaTime * speedMove, 0, 0));
-        if (Vector3.Distance(oldVector, obj.transform.position) > moveRange) {
-            obj.transform.position = oldVector;
+        if (!isStopBgr) {
+            obj.transform.Translate(new Vector3(-1 * Time.deltaTime * speedMove, 0, 0));
+            if (Vector3.Distance(oldVector, obj.transform.position) > moveRange)
+            {
+                obj.transform.position = oldVector;
+            }
         }
+        
+    }
+
+    public void StopBgr()
+    {
+        speedMove = 0;
     }
 }

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - ResetWall
+  - Wall
+  - Grass
+  - Sky
   layers:
   - Default
   - TransparentFX
