@@ -1,0 +1,4 @@
+#Wed May 20 15:38:18 ICT 2020
+base.0=/Users/vtpdigitalize/Unity3D/FlappyBird/Temp/gradleOut/launcher/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex
